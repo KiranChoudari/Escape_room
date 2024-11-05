@@ -55,8 +55,7 @@ const App = () => {
 
     // Model Loading
     const loader = new GLTFLoader();
-    const modelUrl = "/scene_pro2.glb";
-
+    const modelUrl = new URL("/scene_pro2.glb");
 
     let cubeBoundingBox; // Bounding box for the cube
     let roomCube; // Declare roomCube here so it's accessible in tick
