@@ -59,7 +59,7 @@ const App = () => {
 
     let cubeBoundingBox; // Bounding box for the cube
     let roomCube; // Declare roomCube here so it's accessible in tick
-
+    
     loader.load(
       modelUrl,
       (gltf) => {
