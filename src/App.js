@@ -36,7 +36,7 @@ const App = () => {
 
     // Load Model
     const loader = new GLTFLoader();
-    const modelUrl = new URL("./scene_pro2.glb", import.meta.url);
+    const modelUrl = new URL("./scene.glb", import.meta.url);
 
     loader.load(
       modelUrl.href,
@@ -57,48 +57,25 @@ const App = () => {
     const geometry = new THREE.PlaneGeometry(1, 2);
     const material = new THREE.MeshBasicMaterial({ color: 0xff0000, side: THREE.DoubleSide });
     const door1 = new THREE.Mesh(geometry, material);
-    door1.position.set(0, 1, 4.178);
+    door1.position.set(0, 1,3.565);
     door1.scale.set(1, 2, 1);
     door1.name = "door_1";
     scene.add(door1);
     doors.push(new THREE.Box3().setFromObject(door1));
-
-    // Add door_2 (plane)
-    const geometry2 = new THREE.PlaneGeometry(1, 2);
-    const material2 = new THREE.MeshBasicMaterial({ color: 0x00ff00, side: THREE.DoubleSide });
-    const door2 = new THREE.Mesh(geometry2, material2);
-    door2.position.set(-6.740, 1, 4.178);
-    door2.scale.set(1, 2, 1);
-    door2.name = "door_2";
-    scene.add(door2);
-    doors.push(new THREE.Box3().setFromObject(door2));
-
-    // Add door_3 (plane)
-    const geometry3 = new THREE.PlaneGeometry(1, 2);
-    const material3 = new THREE.MeshBasicMaterial({ color: 0x0000ff, side: THREE.DoubleSide });
-    const door3 = new THREE.Mesh(geometry3, material3);
-    door3.position.set(-3.641, 1, 10.861);
-    door3.scale.set(1, 2, 1);
-    door3.rotation.set(0, THREE.MathUtils.degToRad(90), 0);
-    door3.name = "door_3";
-    scene.add(door3);
-    doors.push(new THREE.Box3().setFromObject(door3));
-
-    // Walls/Obstacles for collision
     const obstacles = [];
 
-    // Wall 1
-    const wallGeometry = new THREE.BoxGeometry(16.714, 2, 1);
+    // Wall 1 green
+    const wallGeometry = new THREE.BoxGeometry(16.714, 2, 0.5);
     const wallMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
     const wall1 = new THREE.Mesh(wallGeometry, wallMaterial);
-    wall1.position.set(3.630, 1.001, 4.223);
+    wall1.position.set(3.930, 1.001, 4.223);
     wall1.rotation.y = THREE.MathUtils.degToRad(90);
     scene.add(wall1);
     obstacles.push(new THREE.Box3().setFromObject(wall1));
 
     // Wall 2
     const wall2 = new THREE.Mesh(wallGeometry, wallMaterial);
-    wall2.position.set(-10.808, 1.001, 4.223);
+    wall2.position.set(-3.836, 1.001,-0.629);
     wall2.rotation.y = THREE.MathUtils.degToRad(90);
     scene.add(wall2);
     obstacles.push(new THREE.Box3().setFromObject(wall2));
@@ -106,20 +83,14 @@ const App = () => {
     // Adding additional bounding boxes
     const additionalWalls = [
       {
-        position: new THREE.Vector3(-3.403,0.886,4.228),
+        position: new THREE.Vector3(-3.603,0.886,4.228),
         scale: new THREE.Vector3(5.685, 2, 1),
         rotation: new THREE.Euler(0, 0, 0),
         color: 0xff00ff, // Purple
       },
       {
-        position: new THREE.Vector3(-4.042,0.886,12.558),
-        scale: new THREE.Vector3(13.949, 2, 1),
-        rotation: new THREE.Euler(0, 0, 0),
-        color: 0xffff00, // Yellow
-      },
-      {
-        position: new THREE.Vector3(-4.042,0.886,-4.045),
-        scale: new THREE.Vector3(13.949, 2, 1),
+        position: new THREE.Vector3(0,1,-5.029),
+        scale: new THREE.Vector3(7.155, 2, 0.5),
         rotation: new THREE.Euler(0, 0, 0),
         color: 0x00ffff, // Cyan
       },
