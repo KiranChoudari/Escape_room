@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Escape Room 3D Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Escape Room 3D Application**! This interactive application is built using **Three.js** and React, offering players a fun and immersive escape room experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+1. **Room 1: Color Matching Puzzle**
+   - Solve the color-matching puzzle to unlock the door to the next room.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Room 2: Maze**
+   - Navigate through the maze to find the exit and complete the challenge.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Immersive Gameplay**
+   - First-person controls using the keyboard and mouse for realistic navigation.
+   - Collision detection to enhance interaction with the environment.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎮 Controls
 
-### `npm run build`
+- **Movement:**  
+  Use the following keys to move around:
+  - `W` - Move forward  
+  - `S` - Move backward  
+  - `A` - Move left  
+  - `D` - Move right  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Looking Around:**  
+  Move your mouse to look around.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Pointer Lock:**  
+  Click on the canvas to lock the pointer and activate movement.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🚀 Getting Started
+Prerequisites
+Ensure you have the following installed on your system:
 
-### `npm run eject`
+Node.js (v16 or later)
+npm or yarn
+Installation
+Clone this repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+[git clone https://github.com/your-username/escape-room.git](https://github.com/KiranChoudari/Escape_room.git)
+cd escape-room
+Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+npm install
+Running the Application
+Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+npm start
+Open your browser and go to http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+✨ Gameplay Objective
+Start in Room 1:
 
-## Learn More
+Solve the color-matching puzzle by interacting with the objects.
+Unlock the door to proceed to the next room.
+Enter the Maze:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate through the maze using the keyboard and mouse.
+Find the exit to complete the game.
+📖 Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React.js: For building the user interface.
+Three.js: For rendering the 3D environment.
+GLTFLoader: To load .glb models.
+PointerLockControls: For first-person controls and movement.
 
-### Code Splitting
+🛠️ Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Add additional puzzles and rooms for extended gameplay.
+Implement sound effects for better immersion.
+Include a scoring or timing mechanism for added challenges.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🤝 Contributing
+Contributions are welcome!
+Feel free to fork this repository, make your changes, and submit a pull request.
